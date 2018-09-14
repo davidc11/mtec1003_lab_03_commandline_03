@@ -18,7 +18,7 @@ We're going to be writing a shell script.  First, though... let's figure out wha
 What command did you use, and what was its output?
 ----------
 
-
+date
 
 ==========
 2. Print out a calendar for this month.
@@ -26,7 +26,7 @@ What command did you use, and what was its output?
 What command did you use, and what was its output?
 ----------
 
-
+cal
 
 ==========
 3. Go to your home directory.  Verify that you're in your home directory.
@@ -34,7 +34,8 @@ What command did you use, and what was its output?
 What commands did you use to do this?
 ----------
 
-
+cd ~
+pwd
 
 ==========
 4. Create an empty file called copy_to_backup.sh.  Verify that the file exists.

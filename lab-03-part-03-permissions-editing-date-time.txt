@@ -72,7 +72,8 @@ $ ./copy_to_backup.sh
 What command did you use to try to execute the file?  What happens?
 ----------
 
--bash: ./copy_to_backup.sh: No such file or directory
+./ copy_to_backup.sh
+-bash: ./: is a directory
 
 ==========
 8. Open the file with nano
@@ -88,12 +89,15 @@ a. create a directory called backup
 b. copy all of the txt files in the current directory to the backup directory (use *.txt)
 c. print out "I'm done backing up"
 
-Don't forget the first line of your shell script! It should begin with #!/bin/bash)!
+Don't forget the first line of your shell script! It should begin with (#!/bin/bash)!
 
 Write out the code in your file below...
 ----------
 
-
+#!/bin/bash
+mkdir backup
+cp copy_to_backup.txt backup.txt
+echo I'm done backing up
 
 ==========
 10. Create a directory in your home called test
@@ -107,7 +111,7 @@ Write out the code in your file below...
 What commands did you use to do this?
 ----------
 
-
+touch 1.txt 2.txt
 
 ==========
 12. Move the script that you created into this directory.
@@ -115,7 +119,7 @@ What commands did you use to do this?
 What commands did you use to do this?
 ----------
 
-
+mv ../copy_to_backup.sh .
 
 ==========
 13. Run your script.
@@ -123,10 +127,13 @@ What commands did you use to do this?
 What commands did you use to do this?
 ----------
 
-
+sh copy_to_backup.sh 
 
 ==========
 14. Verify that a backup folder was created in your test directory... with copies of the files present.
 
 What commands did you use to do this?  Show the output.
 ----------
+ls
+1.txt			backup
+2.txt			copy_to_backup.sh

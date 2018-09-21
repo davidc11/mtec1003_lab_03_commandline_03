@@ -43,7 +43,8 @@ pwd
 What commands did you use to do this?
 ----------
 
-
+touch copy_to_backup.sh.
+ls
 
 ==========
 5. What are the permissions on your copy_to_backup.sh.
@@ -51,7 +52,9 @@ What commands did you use to do this?
 What command did you use to find the permissions?
 ----------
 
-
+-rw-------
+drwx------
+ls -alt
 
 ==========
 6. Change the permissions so that this file is executable by the user.  Verify the new permissions.
@@ -59,7 +62,7 @@ What command did you use to find the permissions?
 What commands did you use to do this?  What was the output?
 ----------
 
-
+chmod u+x .bash_sessions/
 
 ==========
 7. Try executing the file!
@@ -69,15 +72,14 @@ $ ./copy_to_backup.sh
 What command did you use to try to execute the file?  What happens?
 ----------
 
-
+-bash: ./copy_to_backup.sh: No such file or directory
 
 ==========
 8. Open the file with nano
 
 What command did you use to do this?
 ----------
-
-
+nano copy_to_backup.sh
 
 ==========
 9. In your file, write the commands to do the following
